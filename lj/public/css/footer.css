@@ -1,0 +1,76 @@
+/*底部footer*/
+#footer{
+  margin-top:15px;
+  background: url('../img/footer-bg.jpg') no-repeat center top;
+  clear: both;
+  width: 100%;
+  height:430px;
+}
+li{
+  list-style:none;
+}
+.lf{
+  float: left;
+}
+.rt{
+  float: right;
+}
+#footer div.f-content{
+  margin-left: 90px;
+  margin-right: 45px;
+}
+#footer ul.lf{
+  display:flex;
+  margin-top: 25px;
+}
+#footer ul.lf li{
+  margin-right: 25px;
+}
+
+#footer div.f-title p{
+  margin: 25px 20px 0 0;
+}
+
+#link-box ul.affix_1 li{
+  display:inline-block;
+  padding:8px 10px;
+  background: #121212;
+  color:#888c8e;
+  margin:25px 12px 12px 8px;
+  cursor:pointer;
+  font-size:12px;
+  tansition:all 3s ease-in-out;
+}
+#link-box .affix_1 li.active{
+  background-color:#d4d4d4;
+  color:#265a88;
+  font-weight: bold;
+}
+#link-box ul.affix_1 li.active a{
+  color: #843534;
+  text-decoration: none;
+}
+.down  > div {
+  display: none;
+  min-height: 150px;
+}
+.down  > div.active {
+  display: block;
+}
+/*下面列表的样式设计*/
+.down  ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.down ul li{
+  margin: 0px 20px 0px 10px;
+  line-height: 35px;
+}
+.down ul li a{
+  color: #2aabd2;
+}
+#footer div.underfoot{
+  margin-top: 15px;
+  background: dodgerblue;
+}
+/*footer结束*/

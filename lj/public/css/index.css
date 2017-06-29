@@ -1,0 +1,369 @@
+body{
+  background:#a6e1ed;
+  font-size: 14px;
+  color:rgb(51,61,51);
+  font-family: 'Hiragino Sans GB', 'Microsoft Yahei UI', 'Microsoft Yahei', 微软雅黑, 'Segoe UI', Tahoma, 宋体b8b体, SimSun, sans-serif;
+}
+#nav .navbar-header img{
+  line-height: 51px;
+  margin-top: 6px;
+}
+
+/*首页样式*/
+#top{
+  background: url("../img/6.jpg")  no-repeat;
+  width:100%;
+  min-height:650px;
+  margin:51px auto 5px auto;
+}
+.house-num{
+  margin-top: 51px;
+  text-align:center;
+  color:#fff;
+  font-size:20px;
+  line-height:35px;
+}
+/*搜索框*/
+#search-box {
+  height: 130px;
+}
+#search-box li{
+  float:left;
+}
+#search-box li a{
+  text-shadow:0 0 3px #4dc71f;
+  font-weight: bold;
+}
+#search-box  div.search{
+  margin-top: 10px;
+}
+/*canvas id为c2的*/
+#c2{
+  margin-top: 30px;
+}
+/*canvas*/
+#sb{
+  height: 45px;
+  width:120px;
+}
+
+/*svg*/
+#c3,#c1{
+  background: rgba(0,0,0,0);
+}
+/*svg*/
+
+#top div.search .btn{
+  background: #f0ad4e;
+  width:75px;
+  height:45px;
+  border:0;
+  border-radius:0 10px 10px 0 ;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  transition:all 3s ease;
+}
+#top div.search .btn:hover{
+  color: #122b40;
+  background: lawngreen;
+}
+/*主体部分*/
+#main{
+position: relative;
+}
+/*左边弹出动画框*/
+
+#vision{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+
+}
+#odiv{
+  width:600px; height:200px;
+  background:rgba(100,200,100,0.4);
+  position:relative;
+  left:-600px;
+  top:70px;
+}
+#odiv p{
+ background: rgba(255,255,25,0.5);
+  color: #843534;
+}
+#sdiv
+{width:20px; height:85px;
+  background:rgba(255,255,0,0.7);
+  position:absolute;
+  top:50px;
+  right:-40px;
+}
+#sdiv h4{
+  color: #2aabd2;
+}
+
+#main ul.home-nav{
+  width: 90%;
+  margin:0 auto;
+  padding-top:70px;
+  padding-bottom:50px;
+  text-align: center;
+  display:flex;
+  felx-wrap:wrap;
+  justify-content:space-between;
+}
+#main ul.home-nav img{
+  width:76px;
+  height:65px;
+  margin:0 auto 17px auto;
+  display:block;
+  vertical-align:middle;
+}
+#main ul.home-nav b{
+  foint-size:18px;
+  color:#ac2925;
+}
+#main ul.home-nav p{
+  width:183px;
+  margin: 5px auto;
+  line-height: 18px;
+  color:#101010;
+}
+
+#main ul.home-nav p:hover{
+  color:hotpink;
+}
+#main ul.home-nav img:hover{
+  transform:translatex(15px) rotate(30deg);
+}
+#main .house-num ul li{
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color:red;
+}
+#main .house-num ul li:hover{
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+  color: yellow;
+}
+
+
+/*图片轮播*/
+#lb{
+  position:relative;
+  height: 389px;
+}
+#introduct{
+  position:absolute;
+  top: 45px;
+  right: 10px;
+}
+#introduct h1{
+  color:#ff00ff;
+  text-shadow:0 0 10px #e4393c;
+}
+#introduct p{
+  line-height: 25px;
+  color:#2aabd2;
+  text-shadow:0 0 2px green;
+}
+#introduct small{
+  color: #888c8e;
+}
+/*新房*/
+#newhouse{
+  margin-top:200px;
+  margin-right: 55px;
+}
+#newhouse li img{
+  transition-property:border-radius;
+  transition-duration:5s;
+  transition-timing-function:linear;
+}
+#newhouse li img:hover{
+  border-radius:50%;
+}
+#newhouse,#second-house h2{
+ font-weight: bold;
+}
+#newhouse,#second-house{
+  margin-left: 90px;
+  margin-top: 25px;
+}
+#newhouse ul.show_newhouse {
+  display: flex;
+}
+#newhouse ul.show_newhouse li{
+  margin: 20px 60px 10px 0;
+}
+
+/*二手房*/
+#second-house{
+  margin-right: 55px;
+}
+#second-house ul.show_secondhouse{
+  display: flex;
+  margin-top: 20px;
+  justify-content:space-between;
+}
+#newhouse ul.show_secondhouse li h5{
+  font-weight: bold;
+}
+
+/*文字闪烁*/
+@-webkit-keyframes flashing {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    color: #ff0000;
+    font-size: 18px;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes flashing {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    color: #ff0000;
+    font-size: 18px;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.flashing{
+  position: relative;
+  top: 0px;
+  left: 5px;
+  -webkit-animation:flash 1.5s infinite  cubic-bezier(1,0,0.5,0) ;
+  animation:flash 1.5s infinite  cubic-bezier(1,0,0.5,0) ;
+}
+
+/*右侧固定边栏*/
+
+#right-aside{
+  width:35px;
+  height:100%;
+  position:fixed;
+  right:0;
+  top:0;
+  background: #fff;;
+  z-index: 1001;
+}
+#right-aside ul{
+  width: 29px;
+  height:1200px;
+  position: absolute;
+}
+#right-aside ul li{
+  width: 29px;
+  height: 40px;
+}
+#right-aside li.attention a{
+  position: absolute;
+  top:80px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -11px no-repeat;
+  cursor: pointer;
+}
+
+#right-aside li.attention a:hover{
+  background:url("../img/love.jpg") -2px -6px no-repeat;
+}
+#right-aside li.question a{
+  position: absolute;
+  top:130px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -47px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.house a{
+  position: absolute;
+  top:180px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -96px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.saoma a{
+  position: absolute;
+  top:230px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -231px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.kefu a{
+  position: absolute;
+  top:280px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -266px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.toTop a{
+  position: absolute;
+  top:330px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -348px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.tool a{
+  position: absolute;
+  top:380px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 40px;
+  background:url("../img/sidebar_spriteV5.png") -45px -462px no-repeat;
+  cursor: pointer;
+}
+/*右侧固定边栏结束*/
+
+/*右下角消息弹出框*/
+#msg{
+  width:200px;height:150px;
+  position:fixed;
+  right:30px;
+  bottom:-150px;
+  opacity: 0.5;
+  background-color:#ff00ff;
+  transition:all 1s linear;
+}
+#msg>a{
+  float:right;
+  color: #269abc;
+  padding:5px 10px;
+  cursor:pointer;
+}
+#msg p{
+  color: #ddd;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+

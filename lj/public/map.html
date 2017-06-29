@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>地图找房</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/footer.min.css"/>
+  <link rel="stylesheet" href="css/map.min.css"/>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4R5WHtjy6b3dd6V5xArGNv5QNol9mQMe"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="nav"></div>
+<div id="main">
+<!--百度地图容器-->
+<div id="allmap"></div>
+<div id="search-box">
+  <div class="mapMain_top">
+    <canvas id="map_canvas" width="70" height="100"></canvas>
+    <div  class="flashing">
+      <a href="index.html">找好房 <br/> 链家~你值得拥有！</a>
+    </div>
+  </div>
+  <div class="search">
+    <input type="search" placeholder="输入小区或地铁站开始找房"/>
+    <button class="glyphicon glyphicon-search" type="submit"></button>
+  </div>
+</div>
+
+</div>
+
+<div id="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/userin.js"></script>
+<script src="js/map.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+//  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

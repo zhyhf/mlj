@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>我的链家</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/index.min.css"/>
+  <link rel="stylesheet" href="css/footer.min.css">
+  <link rel="stylesheet" href="css/public.min.css"/>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="nav"></div>
+<!-------->
+<!--header-->
+<div id="top" class="container">
+  <div class="row">
+ <!-----绘图-->
+    <div class="col-xs-12">
+    <canvas id="c2" width="1100" height="60"></canvas>
+    </div>
+  <!--楼盘消息-->
+ <div class="house-num col-xs-12">
+   <ul>
+     <li>南京链家在售新楼盘62个...</li>
+   </ul>
+ </div>
+  <!--搜索框-->
+  <div id="search-box" class="col-xs-5 col-xs-offset-4">
+    <div class="search-menu">
+      <ul class="nav nav-tabs ">
+        <li class="f_sec" onclick="plhTabSec()" role="presentation"><a href="#" style="color:orangered">找二手房</a></li>
+        <li class="f_new" onclick="plhTabNew()"  role="presentation"><a href="#" style="color:hotpink">找新房</a></li>
+        <li class="f_zf" onclick="plhTabREC()" role="presentation"><a href="#" style="color:mediumvioletred">找租房</a></li>
+        <li class="xq" onclick="plhTabXq()" role="presentation"><a href="#" style="color:deepskyblue">找小区</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input id="sb" type="search" name="search" style="width:360px" placeholder="请输入区域、商圈或者小区名开始找房" autofocus>
+      <button type="button" class="btn">开始找房</button>
+    </div>
+  </div>
+  <!--搜索框结束-->
+</div>
+</div>
+<!--header结束-->
+<!-- --------->
+<!--主体部分main-->
+<div id="main" class="contanier">
+  <!--左边弹出动画框-->
+  <div id="vision">
+    <div id="odiv" class="odiv">
+      <h3>链家~~做行业的领导者</h3>
+      <br/>
+      <p>
+        链家将致力于建立和有效管理最高质量的房地产服务标准，链家领导和推动行业进步。</p>
+      <br/>
+      <p>
+        链家将通过持之以恒的创新，通过新技术的运用打造最好的服务标准，通过有效的管理标准为中国消费者提供最满意的房地产经纪服务
+      </p>
+      <p>
+        希望链家的客人，不用担心房子的信息是假的，不用担心链家不懂客人的需求；不用担心被隐瞒的信息；不用担心一旦协议上签了字就无人理睬的尴尬。链家希望客户能百分百满意地走完所有流程并得到良好的后续服务。
+      </p>
+      <div id="sdiv" class="sdiv">
+        <h4>企业愿景</h4>
+      </div>
+    </div>
+  </div>
+  <!--1:home-nav-->
+  <ul class="home-nav">
+    <li>
+      <a href="second_house.html">
+        <img src="img/phpe022WE.png" alt="图片"/>
+        <b class="flashing">找二手房</b>
+        <p>真实二手房源，链家承诺真实在售</p>
+      </a>
+    </li>
+    <li>
+      <a href="newhouse.html">
+        <img src="img/php6ifmLs.png" alt="图片"/>
+        <b class="flashing">找新房</b>
+        <p>全新房屋，全新生活，给您满意的优质新盘</p>
+      </a>
+    </li>
+    <li>
+      <a href="map.html">
+        <img src="img/php4TtmtO.png" alt="图片"/>
+        <b class="flashing">地图找房</b>
+        <p>为您精准定位，位置周边配套设施一览无余</p>
+      </a>
+    </li>
+  </ul>
+  <!------->
+  <!--2:bootstrap实现图片轮播-->
+   <div class="container" id="lb">
+   <div id="myCar"  class="carousel slide" data-ride="carousel" data-interval="2000">
+     <div class="carousel-inner">
+       <div class="item active">
+         <img src="img/lb1.jpg">
+       </div>
+       <div class="item">
+         <img src="img/lb2.jpg">
+       </div>
+       <div class="item">
+         <img src="img/lb3.jpg">
+       </div>
+       <div class="item">
+         <img src="img/lb4.jpg">
+       </div>
+     </div>
+      <a href="#myCar" class="carousel-control left" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a href="#myCar" class="carousel-control right" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+     <ul class="carousel-indicators">
+       <li data-target="#myCar" data-slide-to="0" class="active"></li>
+       <li data-target="#myCar" data-slide-to="1"></li>
+       <li data-target="#myCar" data-slide-to="2"></li>
+       <li data-target="#myCar" data-slide-to="3"></li>
+     </ul>
+   </div>
+     <!--3:文字说明-----绝对定位在轮播图上-->
+     <div id="introduct">
+       <h1>为你为家<small>一夜倾城</small></h1>
+       <p>集二手、新房、租房功能于一体，随时随地任性找房。<br/>IM匿名咨询让您放心消息动态推送让您省心，服务承诺让您安心，<br/>数据百科锦囊让您感受贴心漫漫找房路，<br/>我们努力为您想更多。</p>
+     </div>
+   </div>
+ <div class="clear"></div>
+  <!----新房---->
+  <div id="newhouse">
+   <h2>新房 <b style="font-size:18px">&gt;&gt;</b> <span style="color:darkgrey;font-size:18px;">新起航</span></h2>
+    <p class="pg flashing">真实信息准确同步，楼盘动态一手掌握</p>
+    <a class="rt" href="newhouse.html">更多南京新房&gt;&gt;</a>
+    <ul class="show_newhouse">
+    </ul>
+  </div>
+<!----新房结束---->
+  <!--二手房-->
+  <div id="second-house">
+   <h2>二手好房<b style="font-size:18px">&gt;&gt;</b> <span style="color:darkgrey;font-size:18px;">为你而选</span></h2>
+   <p class="pg flashing">好房源那么多，我们为你精选，链家网会越来越懂你</p>
+   <a class="rt" href="second_house.html">更多南京二手房&gt;&gt;</a>
+   <ul class="show_secondhouse">
+     <!--使用定义列表实现布局-->
+   </ul>
+  </div>
+  <!----二手房结束---->
+</div><!--main 结束-->
+
+<!--右侧固定栏-->
+<div id="right-aside">
+  <ul>
+    <li class="attention">
+      <a href="#" data-toggle="tooltip" title="关注我吧" data-placement="left"></a>
+    </li>
+    <li class="question">
+      <a href="#" data-toggle="tooltip" title="我要提问" data-placement="left"></a>
+    </li>
+    <li class="house">
+      <a href="#" data-toggle="tooltip" title="在线卖房" data-placement="left"></a>
+    </li>
+    <li class="saoma">
+      <a href="#" data-toggle="tooltip" title="点我扫码" data-placement="left"></a>
+    </li>
+    <li class="kefu">
+      <a href="#" data-toggle="tooltip" title="官方客服" data-placement="left"></a>
+    </li>
+    <li class="toTop">
+      <a href="#" data-toggle="tooltip" title="回到顶部" data-placement="left"></a>
+    </li>
+    <li class="tool">
+      <a href="#" data-toggle="tooltip" title="点我计算" data-placement="left"></a>
+    </li>
+
+  </ul>
+</div>
+
+<!--footer-->
+<div id="footer"></div>
+
+<!--右下角-消息弹出框-->
+<div id="msg">
+  <a href="javascript:down()">隐藏</a>
+  <p>欢迎访问南京链家网，欢迎前来咨询</p>
+  <p>有需求请致电：10109236</p>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/indexshow.js"></script>
+<script src="js/userin.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/bootlint.js"></script>-->
+<script>
+//  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

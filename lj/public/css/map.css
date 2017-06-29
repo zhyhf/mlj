@@ -1,0 +1,97 @@
+.mapMain_top div.flashing{
+  background: url(../img/lvju.png) no-repeat;
+  height: 30px;
+  padding-left:40px;
+  text-decoration: blink;
+}
+@-webkit-keyframes flashing {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    color: #ff0000;
+    font-size: 15px;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes flashing {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    color: #ff0000;
+    font-size: 15px;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.flashing{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 250px;
+  font-size: 15px;
+  color: #0000ff;
+  -webkit-animation:flash 3s infinite  cubic-bezier(1,0,0.5,0) ;
+  animation:flash 3s infinite  cubic-bezier(1,0,0.5,0) ;
+}
+#main{
+  display: flex;
+  margin-top: 51px;
+}
+
+#allmap{width:70%;height:500px;}
+p{margin-left:5px; font-size:14px;}
+#search-box{
+  background: url("../img/map_xk.jpg") no-repeat;
+  width:260px;
+  min-height:30px;
+  float:left;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+#search-box div.search{
+  /*高度，背景颜色*/
+  height:33px;
+  background-color:#0a9dc7;
+  /*边框 或 内边距*/
+  padding:3px;
+}
+#search-box input{
+  /*宽度，高度，去掉边框和内边距*/
+  width:200px;
+  height:25px;
+  border:none;
+  padding:0;
+  outline:none;
+  padding-left:10px;
+  box-sizing:border-box;
+}
+#search-box button{
+  /*宽度，高度，取消边框，背景颜色*/
+  width:40px;
+  height:28px;
+  border:none;
+  background-color:#0a9dc7;
+  /*文字：大小，颜色，加粗*/
+  font-size:12px;
+  color:#fff;
+  font-weight:bold;
+}
+#map_canvas{
+  margin: 15px 0px 5px 30px;
+}
+.mapMain_top{
+  display: flex;
+}
+.mapMain_top div{
+  margin-top:35px;
+}
+.mapMain_top div a{
+  color:#ffff00;
+}

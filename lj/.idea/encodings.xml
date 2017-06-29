@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js/detail_sec.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js/detail_xf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js/indexshow.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js/secondhouse.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js/userin.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user.js" charset="UTF-8" />
+  </component>
+</project>

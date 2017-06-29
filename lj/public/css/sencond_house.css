@@ -1,0 +1,380 @@
+body{
+  background:#a6e1ed;
+  font-size: 14px;
+  color:rgb(51,61,51);
+  font-family: 'Hiragino Sans GB', 'Microsoft Yahei UI', 'Microsoft Yahei', 微软雅黑, 'Segoe UI', Tahoma, 宋体b8b体, SimSun, sans-serif;
+}
+#nav .navbar-header img{
+  line-height: 51px;
+  margin-top: 6px;
+}
+/*二手房页面样式*/
+#header{
+  margin-top: 65px;
+}
+#header ul{
+  display: flex;
+}
+#header ul li.animated{
+  font-weight: bold;
+  font-size: 20px;
+}
+#header ul li.active a{
+  color: #c7254e;
+  !important;
+}
+#header ul li{
+  margin-right: 25px;
+}
+#section{
+  margin-left:50px;
+  width: 100%;
+}
+ul.tabs
+{
+  list-style-type:none;
+  padding:0;
+  margin-left: 30px;
+}
+
+ul.tabs li{
+  display:inline-block;
+  padding:8px 10px;
+  margin:25px 12px 12px 8px;
+  cursor:pointer;
+  font-size:12px;
+}
+ul.tabs>li>a{
+  text-decoration:none;
+  padding:6px 12px;
+  color:darkslategrey;
+}
+ul.tabs  li.active a{
+  color: #843534;
+  text-decoration: none;
+}
+#section .down > div {
+  display: none;
+  min-height: 100px;
+}
+#section .down > div.active {
+  display: block;
+}
+#section .down{
+  min-height: 500px;
+  margin-left: 30px;
+}
+#section .down>canvas{
+  margin-bottom: 15px;
+}
+
+/*二手房源展示*/
+#section div.down ul li{
+  margin-bottom: 40px;
+}
+#section div.down ul h4{
+  background-color: #d0e9c6;
+  margin-bottom: 15px;
+  width: 175px;
+}
+#section div.down ul h3 a{
+  display: inline-block;
+  margin: 25px;
+  font-size: 20px;
+  color: yellow;
+}
+#section div.down ul h3 a:hover{
+  background-color: #1b6d85;
+  text-decoration: none;
+}
+#section div.down ul p{
+  background-color: #d0e9c6;
+  padding: 2px 3px;
+  width: 160px;
+}
+
+/*文字闪烁及其他效果设置*/
+#section div.flashing{
+  margin:15px 0 50px 80px;
+  height: 40px;
+  padding-left:50px;
+  background: url(../img/lvju.png) no-repeat;
+  text-decoration: blink;
+}
+@-webkit-keyframes flashing {
+     0%{
+          opacity: 0;
+      }
+     50%{
+           opacity: 1;
+           color: #ff0000;
+          font-size: 18px;
+      }
+     100%{
+           opacity: 0;
+     }
+   }
+  @keyframes flashing {
+   0%{
+           opacity: 0;
+     }
+    50%{
+         opacity: 1;
+         color: #ff0000;
+          font-size: 18px;
+     }
+    100%{
+          opacity: 0;
+     }
+ }
+   .flashing{
+         position: relative;
+         top: 10px;
+         left: 10px;
+         width: 250px;
+     font-size: 18px;
+         color: #0000ff;
+         -webkit-animation:flash 1.5s infinite  cubic-bezier(1,0,0.5,0) ;
+       animation:flash 1.5s infinite  cubic-bezier(1,0,0.5,0) ;
+      }
+
+
+/*地图*/
+#section div.map{
+  margin: 60px 5px 10px 30px;
+}
+#section div.map div.pic{
+  background: url('../img/php4TtmtO.png') no-repeat;
+  width: 152px;
+  height: 130px;
+  margin: 0 auto;
+}
+#section  #btn-map{
+  margin-left: 60px;
+  margin-top: 15px;
+}
+/*二维码树形条*/
+#more{
+  margin-left: 20px;
+}
+#more div {
+  float:left;
+  height: 100px;
+  text-align: center;
+
+}
+#more #d1,#d3{ background-color: #4dc71f; }
+#more #d2{ cursor: pointer; background-color:#ddd; }
+#more #d1{
+  width:120px;
+  overflow:hidden;
+  transition:all .25s linear;
+}
+#more #d1 p{
+  color: #761c19;
+}
+/*热门问答*/
+#question p{
+  color: #c7254e;
+  font-size: 10px;
+}
+/*新楼盘推荐*/
+#newHousePush{
+  margin: 30px 5px 20px 20px;
+}
+
+#newHousePush h3{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#newHousePush>ul>li{
+  /*左浮动，宽度，高度，右外边距*/
+  float:left;
+  width:240px;
+  height:190px;
+  margin-right:20px;
+  margin-bottom:10px;
+  /*增加过渡效果*/
+  transition:background 300ms linear;
+}
+#newHousePush>ul>li.no-margin{
+  margin-right:0;
+}
+#newHousePush>ul{
+  margin-top: 15px;
+  overflow:hidden;
+}
+#newHousePush ul li.list1 {
+  background: url('../img/tj1.jpg');
+}
+#newHousePush ul li.list2 {
+  background: url('../img/tj2.jpg');
+}
+#newHousePush ul li.list3 {
+  background: url('../img/tj3.jpg');
+}
+#newHousePush ul li.list4 {
+  background: url('../img/tj4.jpg');
+}
+#newHousePush>ul>li:hover{
+  background-position:-10px 0;
+}
+/*遮罩层*/
+#newHousePush>ul>li>p{
+  /*宽度，高度，背景，透明度*/
+  width:50%;
+  height:100%;
+  background-color:#ddd;
+  opacity:0.5;
+}
+/*文字区域*/
+#newHousePush>ul>li{
+  position:relative;
+}
+#newHousePush div.content{
+  position:absolute;
+  left:20px;
+  top:30px;
+}
+#newHousePush>ul>li h5{
+  color:#4dc71f;
+  font-weight: bold;
+}
+#newHousePush>ul>li p{
+  color:#c7254e;
+  font-weight: bold;
+}
+#newHousePush>ul>li span{
+  background:#67b168;
+}
+
+/*右下角消息弹出框*/
+#msg{
+  width:200px;height:150px;
+  position:fixed;
+  right:30px;
+  bottom:-150px;
+  opacity: 0.5;
+  background-color:#ff00ff;
+  transition:all 1s linear;
+}
+#msg>a{
+  float:right;
+  color: #269abc;
+  padding:5px 10px;
+  cursor:pointer;
+}
+#msg p{
+  color: #ddd;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*房源分页*/
+
+/*分页*/
+ol.pagination{
+ position: absolute;
+  right: -5px;
+  bottom: 15px;
+}
+
+/*右侧固定边栏*/
+
+#right-aside{
+  width:35px;
+  height:100%;
+  position:fixed;
+  right:0;
+  top:0;
+  background: #fff;;
+  z-index: 1001;
+}
+#right-aside ul{
+  width: 29px;
+  height:1200px;
+  position: absolute;
+}
+#right-aside ul li{
+  width: 29px;
+  height: 40px;
+}
+#right-aside li.attention a{
+  position: absolute;
+  top:80px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -11px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.attention a:hover{
+  background:url("../img/love.jpg") -2px -6px no-repeat;
+}
+#right-aside li.question a{
+  position: absolute;
+  top:130px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -47px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.house a{
+  position: absolute;
+  top:180px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -96px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.saoma a{
+  position: absolute;
+  top:230px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -231px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.kefu a{
+  position: absolute;
+  top:280px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -266px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.toTop a{
+  position: absolute;
+  top:330px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 35px;
+  background:url("../img/sidebar_spriteV5.png") -45px -348px no-repeat;
+  cursor: pointer;
+}
+#right-aside li.tool a{
+  position: absolute;
+  top:380px;
+  right: 3px;
+  display: block;
+  width: 27px;
+  height: 40px;
+  background:url("../img/sidebar_spriteV5.png") -45px -462px no-repeat;
+  cursor: pointer;
+}
+/*右侧固定边栏结束*/
+
+
+
+

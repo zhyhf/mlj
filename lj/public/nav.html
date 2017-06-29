@@ -1,0 +1,40 @@
+<!--响应式导航条-->
+<nav  id="nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!--1、头部显示-->
+    <div class="navbar-header">
+      <!--1、brand-->
+      <a href="#"><img src="img/lj.png" alt="图片" width="50px" ></a>
+      <div class="navbar-brand" id="n1">南京
+      </div>
+      <!--2、折叠按钮-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!--2、折叠内容-->
+    <div id="myCollapse" class="navbar-collapse collapse">
+      <!--1、导航链接-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="second_house.html">二手房</a></li>
+        <li><a href="newhouse.html">新房</a></li>
+        <li><a href="rent_house.html">租房</a></li>
+        <li><a href="map.html">地图找房</a></li>
+         <li class="dropdown">
+           <a href="#" data-toggle="dropdown">
+             经纪人
+             <span class="caret"></span>
+           </a>
+           <ul class="dropdown-menu">
+             <li><a href="#">买卖经纪人</a></li>
+             <li><a href="#">租赁经纪人</a></li>
+           </ul>
+         </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--导航条结束-->

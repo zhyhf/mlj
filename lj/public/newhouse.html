@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>newhouse</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/public.min.css"/>
+  <link rel="stylesheet" href="css/newhouse.min.css"/>
+  <link rel="stylesheet" href="css/footer.min.css"/>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<nav id="nav"></nav>
+
+<!--新房导航-->
+<div id="xf_nav" class="container">
+<div class="row">
+  <div class="col-md-2">
+    <h3 class="animated flash infinite">链家新房&gt;&gt;</h3>
+  </div>
+  <div class="col-md-4">
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="map.html">地图找房</a></li>
+  </ul>
+  </div>
+  <div class="col-md-offset-3 col-md-2">
+    <p>客服热线 1010-9666</p>
+  </div>
+</div>
+</div>
+
+<!--新房的banner-->
+<div id="xf_banner">
+  <div class="map lf">
+   <div class="map_top">
+    <div class="s_city">
+    <i></i>
+      南京 NANJING
+    </div>
+    <div class="s_map">
+      <a href="map.html">地图找房</a>
+    </div>
+   </div>
+    <a href="map.html">
+    <div class="map_info">
+      <div class="text">
+        <p>
+          在售楼盘：
+          <span>124个</span>
+        </p>
+      </div>
+    </div>
+    </a>
+  </div>
+  <div class="banner lf">
+    <!--连接到查看房的链接-->
+    <a href="#">
+      <i class="title"></i>
+    </a>
+  </div>
+  <div class="indexSearch form-group">
+    <!--搜索框-->
+    <input type="search" class="form-control" placeholder="楼盘名/关键字"autofocus>
+      <span><a href="#">search</a></span>
+      <h4 class="flashing">推荐搜索......</h4>
+   <!--伸缩二级菜单-->
+    <ul class="tree">
+      <li><span class="open">江宁</span>
+        <ul>
+          <li><a href="#">恒大龙珺</a></li>
+          <li><a href="#">鲁能泰山7号院</a></li>
+        </ul>
+      </li>
+      <li><span>栖霞</span>
+        <ul>
+          <li><a href="#">嘉誉山</a></li>
+          <li><a href="#">金浦紫御东方</a></li>
+        </ul>
+      </li>
+      <li><span>玄武</span>
+        <ul>
+          <li><a href="#">葛洲坝招商紫郡兰园</a></li>
+          <li><a href="#">恒大翡翠华庭</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="new_msg">
+  <h2>楼市资讯</h2>
+  <p>随时掌握行业动态，即刻了解热点资讯</p>
+    <!--2:bootstrap实现图片轮播-->
+    <div class="container">
+      <div class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+          <div class="item active">
+          <img src="img/xfhq1.jpg" title="新华社： 现在该不该买房？">
+        </div>
+          <div class="item">
+            <img src="img/xfhq2.jpg" title="南京国土局再预告10幅地块 住宅用地占一半">
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tuiJian">
+  <h2>推荐楼盘</h2>
+  <ul class="lf">
+  </ul>
+</div>
+
+<div class="clear"></div>
+
+<div id="footer"></div>
+
+<!--右侧固定栏-->
+<div id="right-aside">
+  <ul>
+    <li class="attention">
+      <a href="#" data-toggle="tooltip" title="关注我吧" data-placement="left"></a>
+    </li>
+    <li class="question">
+      <a href="#" data-toggle="tooltip" title="我要提问" data-placement="left"></a>
+    </li>
+    <li class="house">
+      <a href="#" data-toggle="tooltip" title="在线卖房" data-placement="left"></a>
+    </li>
+    <li class="saoma">
+      <a href="#" data-toggle="tooltip" title="点我扫码" data-placement="left"></a>
+    </li>
+    <li class="kefu">
+      <a href="#" data-toggle="tooltip" title="官方客服" data-placement="left"></a>
+    </li>
+    <li class="toTop">
+      <a href="#" data-toggle="tooltip" title="回到顶部" data-placement="left"></a>
+    </li>
+    <li class="tool">
+      <a href="#" data-toggle="tooltip" title="点我计算" data-placement="left"></a>
+    </li>
+  </ul>
+</div>
+
+<!--右下角-消息弹出框-->
+<div id="msg">
+  <a href="javascript:down()">隐藏</a>
+  <p>欢迎访问南京链家网，欢迎前来咨询</p>
+  <p>有需求请致电：10109236</p>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/userin.js"></script>
+<script src="js/newhouse.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+//  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

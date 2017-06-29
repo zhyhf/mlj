@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>register</title>
+  <link rel="stylesheet" href="css/index.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/bootstrapValidator.css"/>
+  <style>
+    #nav .m_container{
+      line-height: 70px;
+    }
+    #svg_rg{
+      position: relative;
+    }
+    .row{
+      position: absolute;
+      left:30%;
+      top: 30%;
+      width:780px;
+      z-index: 10;
+    }
+    .row a{
+    background: #d9534f;
+      padding: 5px;
+    }
+    .page-header{
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+<!--导航条-->
+<nav class="navbar navbar-default" id="nav">
+  <div class="m_container">
+    <img src="img/logo.png" alt="logo" height="70px">
+    <a href="index.html" class="rt">返回链家网首页&gt;&gt;</a>
+    </div>
+</nav>
+<!--导航条结束-->
+<div class="container">
+  <svg id="svg_rg" width="1200" height="600">
+  </svg>
+
+  <div class="row">
+    <section>
+      <div class="page-header">
+        <h2>创建账户</h2>
+        <a href="login.html">已有账号，去登录&gt;&gt;</a>
+      </div>
+
+      <div class="col-lg-8 col-lg-offset-2">
+        <form id="defaultForm" class="form-horizontal">
+          <fieldset>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">用户名：</label>
+              <div class="col-lg-5">
+                <input type="text" class="form-control" name="uname" />
+              </div>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">邮箱地址：</label>
+              <div class="col-lg-5">
+                <input type="text" class="form-control" name="email" />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">密码：</label>
+              <div class="col-lg-5">
+                <input type="password" class="form-control" name="upwd" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-lg-5 col-lg-offset-3">
+                <div class="checkbox">
+                  <input type="checkbox" name="acceptTerms" />同意协议
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+              <button  id="bt" class="btn btn-primary">注册</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrapValidator.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

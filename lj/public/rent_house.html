@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>租房</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/public.min.css"/>
+  <link rel="stylesheet" href="css/sencond_house.min.css"/>
+  <link rel="stylesheet" href="css/footer.min.css">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="nav"></nav>
+<!--头部-->
+<header id="header" class="container">
+  <div class="row">
+    <ul class="col-md-6">
+      <li class="animated flash infinite">链家租房&gt;&gt;</li>
+      <li class="active"><a href="#">租房</a></li>
+      <li><a href="map.html">地图找房</a></li>
+    </ul>
+    <a class="col-md-offset-4 col-md-2 " href="#">下载链家APP</a>
+  </div>
+  <div class="form-group has-feedback">
+    <input type="search"
+           class="form-control"
+           placeholder="请输入区域开始找房"/>
+    <span class="form-control-feedback glyphicon glyphicon-search"></span>
+  </div>
+</header>
+
+<!--主体内容部分-->
+
+<section id="section" class="container">
+  <div class="row">
+    <div class="left-content col-md-8">
+      <!--标签页-->
+      <div class="top">
+        <ul class="tabs">
+          <li class="active"><a data-toggle="tab" href="#rent_charts">租房统计图2017</a></li>
+          <li><a data-toggle="tab" href="#default">默认排序</a></li>
+          <li><a data-toggle="tab" href="#zj">房屋租价</a></li>
+          </ul>
+      </div>
+      <!--切换内容部分-->
+      <div class="down">
+        <canvas id="c1" width="500" height="50"></canvas>
+        <div id="rent_charts" class="active" >统计图</div>
+        <div id="default">
+          <ul></ul>
+          <ol class="pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+          </ol>
+        </div>
+        <div id="zj">
+          <ul></ul>
+          <ol class="pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!--右侧内容-->
+    <div class="right-content col-md-3">
+
+      <!--地图找房-->
+
+      <div class="map">
+        <a href="map.html">
+          <div class="pic"></div>
+          <button id="btn-map" class="btn btn-success">试试地图找房</button>
+        </a>
+      </div>
+      <hr/>
+
+      <!--热门问答-->
+
+      <div id="question">
+        <h4>热门问答</h4>
+        <ul>
+          <li>
+            <h5>外地人在南京买房需要什么条件</h5>
+            <p>2017-2-12 12:00</p>
+          </li>
+          <li>
+            <h5>买房该房的税费如何计算</h5>
+            <p>2017-2-12 12:00</p>
+          </li>
+          <li>
+            <h5>买房的流程是怎样的</h5>
+            <p>2017-2-12 12:00</p>
+          </li>
+          <li>
+            <h5>房产税是怎么算的</h5>
+            <p>2017-2-12 12:00</p>
+          </li>
+        </ul>
+        <hr/>
+        <!--二维码-树形列表-->
+        <div id="more">
+          <div id="d1">
+            <p>扫描二维码</p>
+            <p>随时查看新房源</p>
+          </div>
+          <div id="d2">&lt;&lt;</div>
+          <div id="d3">
+            <img src="img/getDownloadQr.png" alt=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--推荐楼盘-->
+  <div id="newHousePush">
+    <h3>推荐楼盘&gt;&gt;</h3>
+    <ul>
+      <li class="list1">
+        <p></p>
+        <div class="content">
+          <h5>江宁-鲁能泰山7号苑</h5>
+          <p>4居/3居 - 182~185平</p>
+          <span>30000元/平</span>
+        </div>
+      </li>
+      <li class="list2">
+        <p></p>
+        <div class="content">
+          <h5>玄武-恒大翡翠华庭</h5>
+          <p>4居/3居 - 134~154平</p>
+          <span>31000元/平</span>
+        </div>
+      </li>
+      <li class="list3">
+        <p></p>
+        <div class="content">
+          <h5>江宁-恒大龙军</h5>
+          <p>4居/3居 - 131~153平</p>
+          <span>28000元/平</span>
+        </div>
+      </li>
+      <li class="list4">
+        <p></p>
+        <div class="content">
+          <h5>浦口-恒辉假日广场</h5>
+          <p>3居/2居 - 167~200平</p>
+          <span>32000元/平</span>
+        </div>
+      </li>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="clear"></div>
+
+<!--右侧固定栏-->
+<div id="right-aside">
+  <ul>
+    <li class="attention">
+      <a href="#" data-toggle="tooltip" title="关注我吧" data-placement="left"></a>
+    </li>
+    <li class="question">
+      <a href="#" data-toggle="tooltip" title="我要提问" data-placement="left"></a>
+    </li>
+    <li class="house">
+      <a href="#" data-toggle="tooltip" title="在线卖房" data-placement="left"></a>
+    </li>
+    <li class="saoma">
+      <a href="#" data-toggle="tooltip" title="点我扫码" data-placement="left"></a>
+    </li>
+    <li class="kefu">
+      <a href="#" data-toggle="tooltip" title="官方客服" data-placement="left"></a>
+    </li>
+    <li class="toTop">
+      <a href="#" data-toggle="tooltip" title="回到顶部" data-placement="left"></a>
+    </li>
+    <li class="tool">
+      <a href="#" data-toggle="tooltip" title="点我计算" data-placement="left"></a>
+    </li>
+  </ul>
+</div>
+
+<div id="footer"></div>
+<!--右下角-消息弹出框-->
+<div id="msg">
+  <a href="javascript:down()">隐藏</a>
+  <p>欢迎访问南京链家网，欢迎前来咨询</p>
+  <p>有需求请致电：10109236</p>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/fusioncharts.js"></script>
+<script src="js/fusioncharts.charts.js"></script>
+<script src="js/userin.js"></script>
+<script src="js/renthouse.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+  //bootlint.showLintReportForCurrentDocument([]);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" href="css/index.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <style>
+    #nav .m_container{
+      line-height: 70px;
+    }
+   #h{
+      font-weight: bold;
+      color: #2aabd2;
+      background: #ffff00;
+    }
+    .container{
+      background: url(img/login_bg.jpg) no-repeat;
+      min-height: 500px;
+    }
+    #form-login{
+      margin-top: 50px;
+      margin-left: 150px;
+    }
+    #form-login a{
+      background-color: #e38d13;
+    }
+  </style>
+</head>
+<body>
+<!--导航条-->
+<nav class="navbar navbar-default" id="nav">
+  <div class="m_container">
+    <img src="img/logo.png" alt="logo" height="70px">
+    <a href="index.html" class="rt">返回链家网首页&gt;&gt;</a>
+  </div>
+</nav>
+<!--导航条结束-->
+<h2 id="h">欢迎登录</h2>
+<div class="container">
+  <form class="form-horizontal" id="form-login">
+    <div class="form-group">
+      <a href="register.html" class="col-sm-4 col-sm-offset-3 ">没有账号，立即注册&gt;&gt;</a>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-3  col-sm-4">
+        <input type="text" class="form-control" name="uname" placeholder="请输入用户名" autofocus>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class=" col-sm-offset-3 col-sm-4">
+        <input type="text" class="form-control" name="upwd" placeholder="请输入密码">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-3">
+        <input style="width: 360px" type="button" id="bt2" value="立即登录" class="btn btn-success">
+      </div>
+    </div>
+  </form>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.min.js"></script>
+</body>
+</html>
